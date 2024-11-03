@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Death Note Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Death Note Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name: <input id="name" type="text" required placeholder="What is your name, human? (Your real name, no aliasses)"/>
+            <label id="email-label">Email: <input id="email" type="email" required placeholder="Share your email, so Ryuk can stay in touch"/></label>
+            <label id="number-label">Age (optional) <input id="number" type="number" min="13" max="120" placeholder="How many years have you lived? (Don't worry, Ryuk already knows.)"</label>
+            <label for="favorite-character">Who is your favorite Death Note character?
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Light Yagami</option>
+                    <option value="2">L</option>
+                    <option value="3">Ryuk</option>
+                    <option value="4">Misa Amane</option>
+                    <option value="5">Near</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>If you had the Death Note, would you use it?</legend>
+            <label for="yes"><input id="yes" type="radio" name="answer" value="yes" class="inline" checked/> Yes, to cleanse the world.</label>
+            <label for="no"><input id="no" type="radio" name="answer" value="no" class="inline"/> No, it's too much power.</label>
+            <label for="idk"><input id="idk" type="radio" name="answer" value="idk" class="inline"/> I'm not sure.</label>
+        </fieldset>
+        <label for="file"> Upload your mortal appearance:
+        <input type="file" id="file" name="pfp"/></label>
+        <label for="comments">Do you have any additional thoughts or suggestions for Ryuk? Write them here... but remember, your words could be your last.</label>
+        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Your message to Ryuk..."></textarea>
+        <label>Which Shinigami rules do you agree with?</label>
+            
+            <label for="rule1"><input type="checkbox" id="rule1" name="rule1" value="rule1" class="inline">A human whose name is written in this note shall die.</label>
+
+            <label for="rule2">
+            <input type="checkbox" id="rule2" name="rule2" value="rule2" class="inline">The note will not take effect unless the writer has the person's face in their mind.</label>
+
+            <label for="rule3">
+            <input type="checkbox" id="rule3" name="rule3" value="rule3" class="inline">The cause of death must be written within 40 seconds.</label>
+            <br>
+
+        <input id="submit" type="submit" value="Seal your fate"/>
+</body>
